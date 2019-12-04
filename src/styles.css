@@ -1,13 +1,16 @@
 .container {
   display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
   flex-direction: column;
   background-color: pink;
-  align-items: center;
+  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .item {
-  width: 100px;
-  height: 100px;
+  flex-grow: 1;
+  min-width: 20px;
   background-color: green;
   color: white;
   font-size: 20px;
@@ -19,9 +22,13 @@
 }
 
 .start-item {
-  align-self: flex-start;
+  min-width: 40px;
+  flex-grow: 2;
+  /* align-self: flex-start; */
 }
 
 .end-item {
-  align-self: flex-end;
+  min-width: 10px;
+  flex-grow: 0.5;
+  /* align-self: flex-end; */
 }
